@@ -6,6 +6,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   adapter: netlify({
+     imageCDN: false,
     edgeMiddleware: true
   }),
   output: 'server'
